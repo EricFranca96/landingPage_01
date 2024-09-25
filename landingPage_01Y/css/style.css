@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* CORES */
+:root {
+    --white: #fff;
+    --dark1: #34344e;
+    --dark2: #3a415a;
+    --dark3: #566981;
+    --dark4: #89a7b1;
+    --dark5: #cbdad5;
+    --dark6: #2f2f46;
+    --cyan1: #70e3ea;
+}
+
+/* Efeito na barra de scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--dark2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--dark3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark4);
+}
+
+
+/*-------------------------------------------------------------*/
+body {
+    background-color: var(--dark1);
+    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: .8rem;
+    background-color: var(--dark6);
+    min-height: 50px;
+}
+
+/* Logo */
+.caixa-img-cabecalho {
+    height: 100%;
+}
+
+.img-logo {
+    max-width: 60px;
+    height: 100%;
+    background: #fff;
+}
+/* Barra de navegação */
+nav {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.nav-links:hover {
+    color: var(--dark4);
+    transition: .4s;
+    text-decoration: underline;
+}
+
+/* Botões */
+
+.caixa-botoes-acoes {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Estilo de todos os botões */
+
+button, .link-acao {
+    padding: .6rem;
+    font-size: .9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+/* Estilo dos botões dessa classe */
+.botao-acao {
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+.botao-acao:hover {
+    background-color: var(--dark3);
+    border: 1px solid var(--dark3);
+}
+
+.link-acao {
+    display: inline-block; /* Ajusta para inline-block */
+    text-decoration: none;
+    width: auto; /* Use auto para uma largura dinâmica */
+    text-align: center;
+    margin-top: 1rem; /* Adiciona um espaçamento */
+    background-color: transparent;
+}
+
+/* Elementos do corpo do site MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Estilo de todas as SECTIONS */
+
+section {
+    padding: 4rem;
+}
+
+.primeira-secao {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 650px;
+}
+
+h1 {
+    font-size: 4rem;
+    color: var(--white);
+    letter-spacing: 8px;
+}
+
+strong {
+    color: var(--cyan1);
+}
+
+.caixa-img-principal {
+    max-width: 400px; /* Limite a largura máxima */
+    padding: 1rem;
+    display: flex; /* Permite centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin: 0 auto; /* Centraliza a caixa em relação ao container pai */
+    
+}
+
+.img-perfil {
+    width: 200px; /* Define a largura fixa */
+    height: 200px; /* Define a altura fixa */
+    border-radius: 50%; /* Mantém o formato circular */
+    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+    background: #fff; /* Adiciona um fundo branco */
+    box-shadow: 1px 1px 1px 1px var(--cyan1); /* Sombreamento opcional */
+}
+
+/* Segunda seção */
+
+.segunda-secao>div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 300px;
+}
+
+.segunda-secao p {
+    color: var(--white);
+}
+
+.segunda-secao, .quarta-secao {
+    background-color: var(--dark2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.segunda-secao ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.segunda-secao ul li {
+    color: var(--dark4);
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.segunda-secao ul li:hover {
+    color: var(--dark5);
+    transition: .4s;
+    cursor: default;
+}
+
+.titulo {
+    color: var(--dark5);
+}
+
+/* Terceira seção */
+
+.terceira-secao {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.terceira-secao > div {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.terceira-secao > div img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.terceira-secao > div p {
+    max-width: 600px;
+    color: var(--white);
+    text-align: justify;
+}
+
+footer {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+footer > div {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+#lista-dos-meus-projetos {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#lista-dos-meus-projetos a{
+    text-decoration: none;
+    color: var(--dark3);
+}
+
+#lista-dos-meus-projetos a:hover {
+    color: var(--dark5);
+    transition: .4s;
+    cursor: default;
+    cursor: pointer;
+}
+
+/* Sombreamento nas imagem */
+
+.img-perfil, .img-quem-sou-eu {
+    box-shadow: 1px 1px 1px 1px var(--cyan1);
+}
